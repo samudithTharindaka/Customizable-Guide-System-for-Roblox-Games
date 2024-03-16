@@ -1,0 +1,43 @@
+local textLabel = script.Parent.TextLabel
+local TweenService = game:GetService("TweenService")
+
+local guideTexts = {
+	"first guidance",
+	"second guidance",
+	"third guidance",
+}
+
+local function animateText(text)
+	local animatedText = ""
+	for j = 1, #text do
+		animatedText = animatedText .. string.sub(text, j, j)
+		textLabel.Text = animatedText
+		wait(0.1) -- Adjust the wait time to change the animation speed
+	end
+end
+
+local function disappearText(textLabel)
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0)
+	local properties = {
+		TextTransparency = 1
+	}
+	local tween = TweenService:Create(textLabel, tweenInfo, properties)
+	tween:Play()
+	wait(1) -- Wait for 1 second after the text disappears
+	textLabel.Text = "" -- Clear the text after it disappears
+	textLabel.TextTransparency = 0 -- Reset text transparency
+end
+
+local function processGuideTexts()
+	for _, text in ipairs(guideTexts) do
+		animateText(text)
+		disappearText(textLabel)
+		print("hi")
+	end
+end
+
+local success, result = pcall(processGuideTexts)
+
+if success then
+	print("Guided printed")
+end
