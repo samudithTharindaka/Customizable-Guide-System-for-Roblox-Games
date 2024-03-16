@@ -20,11 +20,13 @@ To integrate the guide system into your Roblox game, follow these steps:
 
 1. **Download the Script:** Download the `GuideSystem.lua` script file from this repository.
 
-2. **Add Script to Game:** Insert the `GuideSystem.lua` script into your game's Workspace or ServerScriptService.
+2. **Add Script to Game:** Insert the `GuideSystem.lua` script into your game's Workspace or ServerScriptService. Make sure it is a local script
+   
+3. **Connect the variables:**  connect the text label that you need to animate to the variable at the top of the script
 
-3. **Customize Guide Texts:** Modify the `guideTexts` table in the script to include the desired guide texts for your game.
+4. **Customize Guide Texts:** Modify the `guideTexts` table in the script to include the desired guide texts for your game.
 
-4. **Run the Script:** Run the script in your game to display the guide texts to players.
+5. **Run the Script:** Run the script in your game to display the guide texts to players.
 
 ## Example Usage
 
