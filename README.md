@@ -4,7 +4,7 @@ Enhance player experiences in your Roblox games with our customizable guide syst
 
 ## Introduction
 
-This guide system is designed to provide interactive instructions to players within Roblox games. By integrating this system, you can enhance the player's understanding of game mechanics, objectives, and controls, thereby improving their overall experience.
+This guide system is designed to provide interactive instructions to players within Roblox games. By integrating this system, you can enhance the player's understanding of game mechanics, objectives, and controls, thereby improving their overall experience. Its also comes with handy animations
 
 ## Features
 
